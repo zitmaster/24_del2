@@ -37,6 +37,7 @@ public class Account{
         }
     }
 
+    //gets the accountBalance of the current player.
     public int getPlayer1AccountBalance()
     {
         Player p = new Player();
