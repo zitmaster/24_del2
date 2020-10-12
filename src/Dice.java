@@ -1,7 +1,7 @@
-/*public class Dice {
+public class Dice {
 
-    private final int diceFaces = 6;
-    private final int numberOfDices = 2;
+    private final int diceFaces = 6; // edit this variable to customize faces of the dice.
+    private final int numberOfDices = 2; //edit this variable to customize the number of dices.
     private int faceValue;
 
 
@@ -39,4 +39,3 @@
 
 }
 
- */

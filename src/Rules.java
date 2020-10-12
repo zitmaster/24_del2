@@ -2,7 +2,7 @@
 
 
 
-    public static void gameRules()
+    public void gameRules()
     {
         if (Player.getPlayer1AccountBalance >= 3000)
         {
