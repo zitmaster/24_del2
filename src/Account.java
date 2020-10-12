@@ -1,4 +1,4 @@
-public class Account{
+/*public class Account{
     private final int accountStartBalance = 1000;
     private int player1Score = 1000;
     private int player2Score = 1000;
@@ -17,7 +17,7 @@ public class Account{
 
         System.out.println(account.getPlayer1AccountBalance());
         }
-    }*/
+    }
 
     public void setPlayer1AccountBalance(int x)
     {
@@ -29,3 +29,4 @@ public class Account{
         return this.player1Score;
     }
 }
+*/
