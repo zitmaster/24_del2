@@ -5,6 +5,16 @@ public class Dice {
     private int faceValue;
 
 
+    // tests dice method
+    public static void main(String[] args)
+    {
+     Dice dice = new Dice();
+     int i;
+     for(i = 0; i < 10; i++)
+         dice.roll();
+     System.out.println(dice.getFaceValue());
+    }
+
 
    public Dice()
            // sets a constructor for the object Dice.
