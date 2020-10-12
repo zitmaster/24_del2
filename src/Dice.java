@@ -43,8 +43,8 @@ public class Dice {
 
         public String toString()
         {
-            String result = Integer.toString(faceValue);
-            return result;
+            String faceValueToString = Integer.toString(faceValue);
+            return faceValueToString;
         }
 
 }
