@@ -20,7 +20,7 @@ public class Account{
         }
     }
 */
-    public void setPlayer1AccountBalance(int x) // in Game.java account.setPlayer1AccountBalance(getMethod from GameBaord)
+    public void setPlayerAccountBalance(int x) // in Game.java account.setPlayer1AccountBalance(getMethod from GameBaord)
     {
         Player p = new Player();
 
@@ -38,7 +38,7 @@ public class Account{
     }
 
     //gets the accountBalance of the current player.
-    public int getPlayer1AccountBalance()
+    public int getPlayerAccountBalance()
     {
         Player p = new Player();
         int y = 0;
