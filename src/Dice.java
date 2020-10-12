@@ -1,4 +1,4 @@
-public class Dice {
+/*public class Dice {
 
     private final int diceFaces = 6;
     private final int numberOfDices = 2;
@@ -38,3 +38,5 @@ public class Dice {
         }
 
 }
+
+ */
