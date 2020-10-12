@@ -1,10 +1,9 @@
 public class Account{
     private int player1Score = 1000;
     private int player2Score = 1000;
-
+    private int x;
     //test method below//
     /*
-    private int x;
     public static int i;
     public static int j;
 
@@ -21,7 +20,7 @@ public class Account{
         }
     }
 */
-    public void setPlayer1AccountBalance(int x) // private int x to be replaced with getGameBoardScore
+    public void setPlayer1AccountBalance(int x) // in Game.java account.setPlayer1AccountBalance(getMethod from GameBaord)
     {
         Player p = new Player();
 
@@ -45,10 +44,10 @@ public class Account{
         switch (p.getCurrentPlayer())
         {
             case 0:
-                y = this.player1Score; //replace y with GetMethod from GameBoard
+                y = this.player1Score;
             break;
             case 1:
-                y = this.player2Score; //replace y with GetMethod from GameBoard
+                y = this.player2Score;
             break;
             default:
                 System.out.println("invalid playerscore");
