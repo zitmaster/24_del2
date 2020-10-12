@@ -2,6 +2,8 @@ public class Account{
     private int player1Score = 1000;
     private int player2Score = 1000;
     private int x;
+
+
     //test method below//
     /*
     public static int i;
