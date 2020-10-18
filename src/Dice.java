@@ -1,5 +1,6 @@
 /*public class Dice {
-
+    // ISAK - diceFaces skal rykkes ind i kontruktøren.
+    // ISAK - Slet numberOfDices og arbejd efter at controlleren laver 2 Dice objekter.
     private final static int diceFaces = 6; // edit this variable to customize faces of the dice.
     private final static int numberOfDices = 2; //edit this variable to customize the number of dices.
     private static int faceValue; // sum of dice facevalues.
@@ -19,7 +20,7 @@
      }
     }
 
-
+    // ISAK - Konstruktøren skal ikke have nogen metoder her. Det er udelukkende til at lave et nyt objekt.
    public Dice()
            // sets a constructor for the object Dice.
         {
@@ -28,7 +29,7 @@
             Dice.roll();
             System.out.println("You rolled " + toString);
         }
-
+    // ISAK - Ændres til at arbejde med 2 objekter.
         public static int roll()
                 // method that generates a random value for faceValue contingent on diceFaces and numberofDices.
         {
@@ -40,7 +41,7 @@
             }
             return faceValue;
         }
-
+    //ISAK - en setFaceValue skal stadig bruges til tests.
         public void setFaceValue(int value) // unnecessary
         {
             if (value > 0 && value <= diceFaces*numberOfDices)
@@ -51,7 +52,7 @@
         {
             return faceValue;
         }
-
+    // ISAK - skal også ændres til at arbejde med 2 objekter.
         public String toString() // May delete later. Keep if print String variable of dice faceValue is necessary.
         {
             String faceValueToString = Integer.toString(faceValue);
