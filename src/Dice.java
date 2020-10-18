@@ -1,9 +1,9 @@
-public class Dice {
+/*public class Dice {
 
-    private final int diceFaces = 6; // edit this variable to customize faces of the dice.
-    private final int numberOfDices = 2; //edit this variable to customize the number of dices.
+    private final static int diceFaces = 6; // edit this variable to customize faces of the dice.
+    private final static int numberOfDices = 2; //edit this variable to customize the number of dices.
     private static int faceValue; // sum of dice facevalues.
-    private int diceRollValue; // equivalent to the number that is produced when rolling a dice.
+    private static int diceRollValue; // equivalent to the number that is produced when rolling a dice.
 
 
     // tests dice method - Simon needs to optimize this so that the frequence of each faceValue sum is reflected.
@@ -24,9 +24,12 @@ public class Dice {
            // sets a constructor for the object Dice.
         {
             faceValue = 0;
+            diceRollValue = 0;
+            Dice.roll();
+            System.out.println("You rolled " + toString);
         }
 
-        public int roll()
+        public static int roll()
                 // method that generates a random value for faceValue contingent on diceFaces and numberofDices.
         {
             int j;
@@ -38,7 +41,7 @@ public class Dice {
             return faceValue;
         }
 
-        public void setFaceValue(int value)
+        public void setFaceValue(int value) // unnecessary
         {
             if (value > 0 && value <= diceFaces*numberOfDices)
                 faceValue = value;
@@ -49,10 +52,11 @@ public class Dice {
             return faceValue;
         }
 
-        public String toString()
+        public String toString() // May delete later. Keep if print String variable of dice faceValue is necessary.
         {
             String faceValueToString = Integer.toString(faceValue);
             return faceValueToString;
         }
 
 }
+*/
