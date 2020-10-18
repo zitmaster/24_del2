@@ -1,9 +1,9 @@
-/*public class Player {
+public class Player {
     private static int currentPlayer = 0;
     private static final int playerAmount = 2;
 
-     Tests the method below
-    public static void main(String[] args)
+     //Tests the method below
+    /*public static void main(String[] args)
     {
         int i;
         Player p = new Player();
@@ -12,13 +12,16 @@
         p.nextPlayer();
         System.out.println(p.getCurrentPlayer());
         }
+    }*/
+
+
+    public Player()
+    {
+        Player.nextPlayer();
     }
 
-
-    // skift til objectorienteret kode (indsæt constructor)
-
     // sets current player at the beginning of the round. Player 1 is 0 and Player 2 is 1.
-    public void nextPlayer()
+    public static void nextPlayer()
     {
         currentPlayer = (currentPlayer + 1) % playerAmount;
     }
@@ -33,4 +36,3 @@
         return this.currentPlayer;
     }
 }
-*/

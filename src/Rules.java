@@ -1,6 +1,10 @@
 /*public class Rules {
 
 
+    public Rules()
+    {
+    Rules.gameRules();
+    }
 
     public void gameRules()
     {
