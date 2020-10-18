@@ -26,6 +26,7 @@
             faceValue = 0;
             diceRollValue = 0;
             Dice.roll();
+            System.out.println("You rolled " + toString);
         }
 
         public static int roll()

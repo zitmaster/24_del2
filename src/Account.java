@@ -14,8 +14,6 @@ public class Account{
     //test method below//
 
     public static int i;
-
-
     public static void main(String[] args){
         Account account = new Account();
 
