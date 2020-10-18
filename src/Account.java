@@ -1,11 +1,11 @@
-public class Account{
+/*public class Account{
     private int player1Score = 1000;
     private int player2Score = 1000;
     private int x;
 
 
     //test method below//
-    /*
+
     public static int i;
     public static int j;
 
@@ -21,7 +21,7 @@ public class Account{
 
         }
     }
-*/
+
     public void setPlayerAccountBalance(int x) // in Game.java account.setPlayer1AccountBalance(getMethod from GameBaord)
     {
         Player p = new Player();
@@ -58,3 +58,4 @@ public class Account{
         return y;
     }
 }
+*/

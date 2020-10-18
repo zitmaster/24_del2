@@ -1,10 +1,10 @@
-public class Rules {
+/*public class Rules {
 
 
 
     public void gameRules()
     {
-        Account account = new Account();
+        Account account = new Account(); //change this
         //ends the game if the current player's account balance reaches 3000 or above.
         if (account.getPlayerAccountBalance() >= 3000)
         {
@@ -14,3 +14,4 @@ public class Rules {
 
     }
 }
+*/
