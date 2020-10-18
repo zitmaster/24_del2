@@ -1,11 +1,12 @@
 /*public class Rules {
 
-
+    // ISAK - ?? Hvad skal der ske i Rules.gameRules()? Der er en public metode til gameRules.
     public Rules()
     {
     Rules.gameRules();
     }
-
+    // ISAK - Ingen ny account her.
+    // Regel til at skifte spiller efter turen er taget?
     public void gameRules()
     {
         Account account = new Account(); //change this
