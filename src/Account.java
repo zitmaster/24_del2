@@ -2,7 +2,8 @@ public class Account{
     private int player1Score = 1000;
     private int player2Score = 1000;
     private int x;
-
+    // ISAK - Skal konstruktøren ikke tage imod en player som variable i metoden?
+    // ISAK - I stedet for at sætte account til 1000 i klassen, så sæt dem i metoden?
     // constructor for Account object.
     public Account()
     {
@@ -12,7 +13,7 @@ public class Account{
     }
 
     //test method below//
-
+    // ISAK - vil råde dig til at lave alle tests i main klassen
     public static int i;
     public static void main(String[] args){
         Account account = new Account();
@@ -26,7 +27,7 @@ public class Account{
         }
     }
 
-
+    // ISAK - her skal ikke instansieres et nyt Player objekt
     public void setPlayerAccountBalance(int x) // in Game.java account.setPlayer1AccountBalance(getMethod from GameBaord)
     {
         Player p = new Player();
@@ -42,7 +43,7 @@ public class Account{
                 System.out.println("invalid playerscore");
         }
     }
-
+    // ISAK - igen, der skal ikke laves new Player
     //gets the accountBalance of the current player.
     public int getPlayerAccountBalance()
     {
