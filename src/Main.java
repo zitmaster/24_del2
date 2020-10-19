@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Main {
-    private static String input;
+    public static String input;
 
     public static void scanner(){
         Scanner scan = new Scanner(System.in);
@@ -22,7 +22,7 @@ public class Main {
     }
 
     public static void endGame(){
-        System.out.println("Player "+ x);//Jeg er ikke sikker på hvad der skal stå her og har der med indsat x
+        System.out.println("Player "+ "x");//Jeg er ikke sikker på hvad der skal stå her og har der med indsat x
         System.out.println("Type 'n' to start a new game");
 
         scanner();
