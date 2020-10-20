@@ -1,6 +1,8 @@
 public class Player {
     private static int currentPlayerNumber;
-    private static final int playerAmount = 2;
+    private boolean isTurn = false;
+    private String name;
+
 
      //Tests the method below
     /*public static void main(String[] args)
@@ -15,24 +17,31 @@ public class Player {
     }*/
 
 
-    public Player()
+    public Player(String name)
     {
-        Player.nextPlayer();
+        this.name = name;
     }
 
-    // sets current player at the beginning of the round. Player 1 is 0 and Player 2 is 1.
-    public static void nextPlayer()
-    {
-        currentPlayer = (currentPlayer + 1) % playerAmount;
+    public void setTurn(boolean turn) {
+        isTurn = turn;
     }
 
-    public void setCurrentPlayer(int currentPlayer)
+    public boolean isTurn() {
+        return isTurn;
+    }
+
+    public void setCurrentPlayer(int currentPlayerNumber)
     {
-        this.currentPlayer = currentPlayer;
+        this.currentPlayerNumber = currentPlayerNumber;
     }
 
     public int getCurrentPlayer()
     {
-        return this.currentPlayer;
+        return this.currentPlayerNumber;
+    }
+
+    public String getName()
+    {
+        return name;
     }
 }
