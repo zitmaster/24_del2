@@ -1,13 +1,14 @@
 public class Account{
     private int player1Score = 1000;
     private int player2Score = 1000;
-    private int x;
+    private int currentPlayer;
+    private int gameBoardScore;
 
     // constructor for Account object.
-    public Account(int updateScore)
+    public Account(int updateScore, int currentPlayer)
     {
-        player1Score += updateScore;
-        player2Score += updateScore;
+        this.currentPlayer = currentPlayer; //current player comes from game.java.
+        this.gameBoardScore = updateScore; //updateScore comes from game.java
     }
 
     //test method below//
@@ -26,16 +27,16 @@ public class Account{
     }
 
 
-    public void setPlayerAccountBalance(int x) // in Game.java account.setPlayer1AccountBalance(getMethod from GameBaord)
+    public void setPlayerAccountBalance(int gameBoardScore, int currentPlayer) // in Game.java account.setPlayer1AccountBalance(getMethod from GameBaord)
     {
-        Player p = new Player();
-        switch (p.getCurrentPlayer())
+        int c = currentPlayer;
+        switch (c)
         {
             case 0:
-                this.player1Score = x + player1Score; //replace x with GetMethod from GameBoard
+                this.player1Score = gameBoardScore + player1Score; //replace x with GetMethod from GameBoard
                 break;
             case 1:
-                this.player2Score = x + player2Score; //replace x with GetMethod from GameBoard
+                this.player2Score = gameBoardScore + player2Score; //replace x with GetMethod from GameBoard
                 break;
             default:
                 System.out.println("invalid playerscore");
@@ -43,11 +44,10 @@ public class Account{
     }
 
     //gets the accountBalance of the current player.
-    public int getPlayerAccountBalance()
+    public int getPlayerAccountBalance(int currentPlayer)
     {
-        Player p = new Player();
         int y = 0;
-        switch (p.getCurrentPlayer())
+        switch (currentPlayer)
         {
             case 0:
                 y = this.player1Score;
