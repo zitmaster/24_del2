@@ -1,5 +1,5 @@
 public class Player {
-    private static int currentPlayer = 0;
+    private static int currentPlayerNumber;
     private static final int playerAmount = 2;
 
      //Tests the method below

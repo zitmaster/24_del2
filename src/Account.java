@@ -4,11 +4,9 @@ public class Account{
     private int x;
 
     // constructor for Account object.
-    public Account()
+    public Account(int updateScore)
     {
-        setPlayerAccountBalance(int x); //replace x with getMethod from GameBoard.
-        System.out.println("Player "+ Player.getCurrentPlayer());"score: " + Account.getPlayerAccountBalance());
-// System.out.println needs to go in gameLoop?
+        player1Score += updateScore;
     }
 
     //test method below//

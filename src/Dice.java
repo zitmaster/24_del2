@@ -1,4 +1,4 @@
-/*public class Dice {
+public class Dice {
 
     private final static int diceFaces = 6; // edit this variable to customize faces of the dice.
     private final static int numberOfDices = 2; //edit this variable to customize the number of dices.
@@ -59,4 +59,3 @@
         }
 
 }
-*/
