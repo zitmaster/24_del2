@@ -7,6 +7,7 @@ public class Account{
     public Account(int updateScore)
     {
         player1Score += updateScore;
+        player2Score += updateScore;
     }
 
     //test method below//
