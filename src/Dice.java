@@ -23,10 +23,7 @@ public class Dice {
    public Dice()
            // sets a constructor for the object Dice.
         {
-            faceValue = 0;
-            diceRollValue = 0;
-            Dice.roll();
-            System.out.println("You rolled " + toString);
+            faceValue = getFaceValue();
         }
 
         public static int roll()
