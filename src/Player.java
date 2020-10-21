@@ -2,6 +2,8 @@ public class Player {
     private static int currentPlayer = 2;
     private boolean isTurn = false;
     private String name;
+    private static int player1Position = 0;
+    private static int player2Position = 0;
 
 
      //Tests the method below
@@ -34,7 +36,7 @@ public class Player {
             this.currentPlayer = 2;
         }
         else if (currentPlayerTurn == 2){
-            this.currentPlayer = 1
+            this.currentPlayer = 1;
         }
     }
 
@@ -46,5 +48,18 @@ public class Player {
         return name;
     }
 
+    public void setPlayer1Position(int diceSum, int currentPlayer1Position){
+        int x = diceSum + currentPlayer1Position;
+        if (x > 12 && x < 24){
+            this.player1Position = x - 11;
+        }
+        else if (x == 24) {
+            this.player1Position = x - 12;
+        }
+        else
+            this.player1Position = x + player1Position;
+
+        }
+    }
 
 }
