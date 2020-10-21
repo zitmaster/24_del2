@@ -17,8 +17,7 @@ public class Player {
     }*/
 
 
-    public Player(String name)
-    {
+    public Player(String name) {
         this.name = name;
     }
 
@@ -30,18 +29,17 @@ public class Player {
         return isTurn;
     }
 
-    public void setCurrentPlayer(int currentPlayerNumber)
-    {
+    public void setCurrentPlayer(int currentPlayerNumber) {
         this.currentPlayerNumber = currentPlayerNumber;
     }
 
-    public int getCurrentPlayer()
-    {
+    public int getCurrentPlayer() {
         return this.currentPlayerNumber;
     }
 
-    public String getName()
-    {
+    public String getName() {
         return name;
     }
+
+
 }
