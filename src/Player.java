@@ -1,5 +1,5 @@
 public class Player {
-    private static int currentPlayerNumber;
+    private static int currentPlayer;
     private boolean isTurn = false;
     private String name;
 
@@ -30,11 +30,11 @@ public class Player {
     }
 
     public void setCurrentPlayer(int currentPlayerNumber) {
-        this.currentPlayerNumber = currentPlayerNumber;
+        this.currentPlayer = currentPlayerNumber;
     }
 
     public int getCurrentPlayer() {
-        return this.currentPlayerNumber;
+        return this.currentPlayer;
     }
 
     public String getName() {
