@@ -48,18 +48,30 @@ public class Player {
         return name;
     }
 
-    public void setPlayer1Position(int diceSum, int currentPlayer1Position){
+    public void setPlayer1Position(int diceSum, int currentPlayer1Position) {
         int x = diceSum + currentPlayer1Position;
-        if (x > 12 && x < 24){
+        if (x > 12 && x < 24) {
             this.player1Position = x - 11;
-        }
-        else if (x == 24) {
+        } else if (x == 24) {
             this.player1Position = x - 12;
-        }
-        else
+        } else {
             this.player1Position = x + player1Position;
-
         }
     }
-
+    public void setPlayer2Position(int diceSum, int currentPlayer2Position) {
+        int x = diceSum + currentPlayer2Position;
+        if (x > 12 && x < 24) {
+            this.player2Position = x - 11;
+        } else if (x == 24) {
+            this.player2Position = x - 12;
+        } else {
+            this.player2Position = x + player2Position;
+        }
+    }
+    public int getPlayer1Position(){
+        return this.player1Position;
+    }
+    public int getPlayer2Position(){
+        return this.player2Position;
+    }
 }
