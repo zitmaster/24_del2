@@ -1,11 +1,10 @@
 public class Account{
-    private int player1Score = 1000;
-    private int player2Score = 1000;
-    private int gameBoardScore;
+    private int playerScoreTest = 1000;
 
     // constructor for Account object.
-    public Account()
-    {
+    public Account(String name) {
+        int playerScore = 1000;
+        String name;
     }
 
     //test method below//
@@ -24,19 +23,19 @@ public class Account{
     }
 */
 
-    public void setPlayer1Score(int gameBoardScore) {
-        this.player1Score = gameBoardScore + player1Score;
+    public void setPlayerScore(int gameBoardScore) {
+        this.playerScoreTest = gameBoardScore + playerScoreTest;
     }
-    public void setPlayer2Score(int gameBoardScore) {
-        this.player2Score = gameBoardScore + player2Score;
+    public void setPlayerScore(int gameBoardScore) {
+        this.playerScoreTest = gameBoardScore + playerScoreTest;
     }
 
     //gets the accountBalance of the current player.
     public int getPlayer1Score() {
-        return player1Score;
+        return playerScoreTest;
     }
     public int getPlayer2Score(){
-        return player2Score;
+        return playerScoreTest;
     }
 
 }
