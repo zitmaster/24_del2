@@ -1,7 +1,9 @@
+package Game;
+
 public class Account{
     private int playerScoreTest = 1000;
 
-    // constructor for Account object.
+    // constructor for Game.Account object.
     public Account(String name) {
         int playerScore = 1000;
         String name;
@@ -11,14 +13,14 @@ public class Account{
     /*
     public static int i;
     public static void main(String[] args){
-        Account account = new Account();
+        Game.Account account = new Game.Account();
 
         for(i = 0; i < 5; i++)
         {
             account.setPlayerAccountBalance(5);
 
-        System.out.println("Player 1 "+account.getPlayerAccountBalance());
-            System.out.println("Player 2 "+account.getPlayerAccountBalance());
+        System.out.println("Game.Player 1 "+account.getPlayerAccountBalance());
+            System.out.println("Game.Player 2 "+account.getPlayerAccountBalance());
         }
     }
 */

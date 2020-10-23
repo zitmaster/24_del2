@@ -1,3 +1,5 @@
+package Game;
+
 public class Dice {
 
     private final static int diceFaces = 6; // edit this variable to customize faces of the dice.
@@ -21,7 +23,7 @@ public class Dice {
 
 
     public Dice()
-    // sets a constructor for the object Dice.
+    // sets a constructor for the object Game.Dice.
     {
         faceValue = getFaceValue();
     }

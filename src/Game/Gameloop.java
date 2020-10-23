@@ -1,4 +1,6 @@
-import java.util.Scanner;
+package Game;
+
+import Game.Dice;
 
 public class Gameloop {
 
@@ -21,7 +23,7 @@ public class Gameloop {
     }
 
     public static void endGame(){
-        System.out.println("Player "+ "x");//Jeg er ikke sikker på hvad der skal stå her og har der med indsat x
+        System.out.println("Game.Player "+ "x");//Jeg er ikke sikker på hvad der skal stå her og har der med indsat x
         System.out.println("Type 'n' to start a new game");
 
         scanner();

@@ -1,3 +1,5 @@
+package Game;
+
 public class Player {
     private static int currentPlayer = 2;
     private boolean isTurn = false;
@@ -11,7 +13,7 @@ public class Player {
     public static void main(String[] args)
     {
         int i;
-        Player p = new Player("babyboy");
+        Game.Player p = new Game.Player("babyboy");
         for(i = 0; i < 10; i++)
         {
         p.setCurrentPlayer(p.getCurrentPlayer());
