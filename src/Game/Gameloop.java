@@ -2,15 +2,15 @@ package Game;
 
 public class Gameloop {
 
-    private static void gameloop(){
+    public static void gameloop(){
         Controller.scanner();
 
         if(Controller.input.toLowerCase().equals("r")){
             Dice.roll();
 
 
-            Rules.gameRules;
-            Player.nextPlayer();
+            //Rules.gameRules;
+            //Player.nextPlayer();
         }
 
     }
