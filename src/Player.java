@@ -60,14 +60,14 @@ public class Player {
             this.player1Position = x + player1Position;
         }
     }
-    public void setPlayer2Position(int diceSum, int currentPlayer2Position) {
-        int x = diceSum + currentPlayer2Position;
-        if (x > 12 && x < 24) {
-            this.player2Position = x - 11;
+    public void setPlayerPosition(int diceSum, int currentPlayerPosition) {
+        int x = diceSum + currentPlayerPosition;
+        if (x > 11 && x < 24) {
+            this.playerPosition = x - 11;
         } else if (x == 24) {
-            this.player2Position = x - 12;
+            this.playerPosition = x - 12;
         } else {
-            this.player2Position = x + player2Position;
+            this.playerPosition = x + playerPosition;
         }
     }
     public int getPlayer1Position(){

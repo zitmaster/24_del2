@@ -1,7 +1,6 @@
 public class Dice {
 
     private final static int diceFaces = 6; // edit this variable to customize faces of the dice.
-    private final static int numberOfDices = 2; //edit this variable to customize the number of dices.
     private static int faceValue; // sum of dice facevalues.
     private static int diceRollValue; // equivalent to the number that is produced when rolling a dice.
 
