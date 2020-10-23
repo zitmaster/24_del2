@@ -2,59 +2,61 @@ package Game;
 
 public class Dice {
 
-    private final static int diceFaces = 6; // edit this variable to customize faces of the dice.
-    private final static int numberOfDices = 2; //edit this variable to customize the number of dices.
-    private static int faceValue; // sum of dice facevalues.
-    private static int diceRollValue; // equivalent to the number that is produced when rolling a dice.
+    private final static int diceFaces = 6;
+    private int faceValue;
+    private String diceName;
+
+    // test method
+//    public static void main(String[] args)
+//    {
+//        Dice dice1 = new Dice("dice1");
+//        Dice dice2 = new Dice("dice2");
+//        int i;
+//        for(i = 0; i < 20; i++)
+//        {
+//            dice1.roll();
+//            dice2.roll();
+//            System.out.println("You rolled");
+//            System.out.print(dice1.faceValue + " and ");
+//            System.out.println(dice2.faceValue);
+//            System.out.print("Sum of dices ");
+//            System.out.println(dice1.faceValue+dice2.faceValue);
+//            java.lang.System.exit(0);
+//        }
+//    }
 
 
-    // tests dice method - Simon needs to optimize this so that the frequence of each faceValue sum is reflected.
-    public static void main(String[] args)
+    public Dice(String nameInput)
+    // sets a constructor for the object Dice.
     {
-        Dice dice = new Dice();
-        int i;
-        for(i = 0; i < 1000; i++)
-        {
-            dice.roll();
-            System.out.println(dice.getFaceValue());
-            faceValue = 0;
-        }
+        String diceName;
+        int faceValue;
     }
 
-
-    public Dice()
-    // sets a constructor for the object Game.Dice.
-    {
-        faceValue = getFaceValue();
-    }
-
-    public static int roll()
+    public void roll()
     // method that generates a random value for faceValue contingent on diceFaces and numberofDices.
     {
-        int j;
-        for (j = 0; j < numberOfDices; j++)
-        {
-            diceRollValue = (int) (Math.random() * diceFaces) + 1;
-            faceValue = diceRollValue + faceValue;
-        }
-        return faceValue;
+        faceValue = (int) (Math.random() * diceFaces) + 1;
+        System.out.print(faceValue +" ");
     }
 
-    public void setFaceValue(int value) // unnecessary
-    {
-        if (value > 0 && value <= diceFaces*numberOfDices)
-            faceValue = value;
-    }
 
-    public int getFaceValue()
-    {
-        return faceValue;
-    }
-
-    public String toString() // May delete later. Keep if print String variable of dice faceValue is necessary.
-    {
-        String faceValueToString = Integer.toString(faceValue);
-        return faceValueToString;
-    }
+//  used for tests
+//    public void setFaceValue(int value) // unnecessary
+//    {
+//        if (value > 0 && value <= diceFaces)
+//            faceValue = value;
+//    }
+//
+//    public int getFaceValue()
+//    {
+//        return faceValue;
+//    }
+//
+//    public String toString() // May delete later. Keep if print String variable of dice faceValue is necessary.
+//    {
+//        String faceValueToString = Integer.toString();
+//        return faceValueToString;
+//    }
 
 }
