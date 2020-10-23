@@ -1,4 +1,3 @@
-import
 public class Gameboard {
 
     public int currentPosition;
