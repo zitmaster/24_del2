@@ -1,16 +1,15 @@
 package Game;
 
-import Game.Dice;
-
 public class Gameloop {
 
     private static void gameloop(){
         Controller.scanner();
 
         if(Controller.input.toLowerCase().equals("r")){
-            System.out.println(Dice.roll());
+            Dice.roll();
 
 
+            Rules.gameRules;
             Player.nextPlayer();
         }
 
