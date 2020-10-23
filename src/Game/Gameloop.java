@@ -5,9 +5,9 @@ import Game.Dice;
 public class Gameloop {
 
     private static void gameloop(){
-        Main.scanner();
+        Controller.scanner();
 
-        if(Main.input.toLowerCase().equals("r")){
+        if(Controller.input.toLowerCase().equals("r")){
             System.out.println(Dice.roll());
 
 
@@ -26,9 +26,9 @@ public class Gameloop {
         System.out.println("Game.Player "+ "x");//Jeg er ikke sikker på hvad der skal stå her og har der med indsat x
         System.out.println("Type 'n' to start a new game");
 
-        scanner();
+        Controller.scanner();
 
-        if(input.toLowerCase().equals("n")){
+        if(Controller.input.toLowerCase().equals("n")){
             newGame();
         }
     }
