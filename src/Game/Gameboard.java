@@ -1,4 +1,4 @@
-import
+import Game.
 public class Gameboard {
 
     public int currentPosition;

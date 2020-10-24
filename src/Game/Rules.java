@@ -1,4 +1,4 @@
-/*public class Rules {
+public class Rules {
     public Rules()
     {
     Rules.gameRules();
@@ -13,4 +13,3 @@
         }
     }
 }
-*/
