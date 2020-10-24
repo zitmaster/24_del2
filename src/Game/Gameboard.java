@@ -1,38 +1,56 @@
-package Game;
-
-import Game.Account;
-import Game.Dice;
-
+import
 public class Gameboard {
 
+    public int currentPosition;
+    public int startPosition;
+    // facevalue ikke integreret
+    // accountvalue ikke integreret
 
+
+
+
+
+    public Gameboard() {
+        currentPosition = Player.getPosition + Dice.getFaceValue;
+
+    }
+
+// player.setposition
+    //player.getposition
 
 
 
     public int newPosition() {
-        Player.setPostion((Player.getPosition()+ Dice.getDiceSum())%11)
+        if (Player.getPosition + Dice.getFaceValue > 11) {
+            Position = (Player.getPosition + Dice.getFaceValue) - 11;}
+        else{
+            currentPosition = Player.getPosition + Dice.getFaceValue;}
+
+            return currentPosition;
+        Player.setPosition = currentPosition;
+        }
 
 
 
-        switch(Player.getPosition())
+        switch(Position)
 
     {
-        case 1:
+        case 2:
             System.out.println("Tile 2: Tower");
             System.out.println("Your balance is now: " + Account.getBalance + 250);
             Account.setbalance(Account.getBalance + 250);
             break;
-        case 2:
+        case 3:
             System.out.println("Tile 3: Crater");
             System.out.println("Your balance is now: " + Account.getBalance - 100);
             Account.setbalance(Account.getBalance - 100);
             break;
-        case 3:
+        case 4:
             System.out.println("Tile 4: Palace gates");
             System.out.println("Your balance is now: " + Account.getBalance + 100);
             Account.setbalance(Account.getBalance + 100);
             break;
-        case 4:
+        case 5:
             System.out.println("Tile 5: Cold Desert");
             System.out.println("Your balance is now: " + Account.getBalance - 20);
             Account.setbalance(Account.getBalance - 20);

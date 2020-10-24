@@ -5,7 +5,7 @@
     }
     public void gameRules()
     {
-        Game.Account account = new Game.Account(); //change this
+        Account account = new Account(); //change this
         //ends the game if the current player's account balance reaches 3000 or above.
         if (account.getPlayerAccountBalance() >= 3000)
         {
