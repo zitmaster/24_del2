@@ -1,4 +1,4 @@
-import Game.
+<<<<<<<<< Temporary merge branch 1:src/Gameboard.java
 public class Gameboard {
 
     public int currentPosition;
@@ -7,50 +7,43 @@ public class Gameboard {
     // accountvalue ikke integreret
 
 
+=========
+package Game;
+>>>>>>>>> Temporary merge branch 2:src/Game/Gameboard.java
+
+import Game.Account;
+import Game.Dice;
+
+public class Gameboard {
 
 
-
-    public Gameboard() {
-        currentPosition = Player.getPosition + Dice.getFaceValue;
-
-    }
-
-// player.setposition
-    //player.getposition
 
 
 
     public int newPosition() {
-        if (Player.getPosition + Dice.getFaceValue > 11) {
-            Position = (Player.getPosition + Dice.getFaceValue) - 11;}
-        else{
-            currentPosition = Player.getPosition + Dice.getFaceValue;}
-
-            return currentPosition;
-        Player.setPosition = currentPosition;
-        }
+        Player.setPostion((Player.getPosition()+ Dice.getDiceSum())%11)
 
 
 
-        switch(Position)
+        switch(Player.getPosition())
 
     {
-        case 2:
+        case 1:
             System.out.println("Tile 2: Tower");
             System.out.println("Your balance is now: " + Account.getBalance + 250);
             Account.setbalance(Account.getBalance + 250);
             break;
-        case 3:
+        case 2:
             System.out.println("Tile 3: Crater");
             System.out.println("Your balance is now: " + Account.getBalance - 100);
             Account.setbalance(Account.getBalance - 100);
             break;
-        case 4:
+        case 3:
             System.out.println("Tile 4: Palace gates");
             System.out.println("Your balance is now: " + Account.getBalance + 100);
             Account.setbalance(Account.getBalance + 100);
             break;
-        case 5:
+        case 4:
             System.out.println("Tile 5: Cold Desert");
             System.out.println("Your balance is now: " + Account.getBalance - 20);
             Account.setbalance(Account.getBalance - 20);
