@@ -5,6 +5,7 @@ public class Dice {
     private final static int diceFaces = 6;
     private int faceValue;
     private String diceName;
+    private int diceSum;
 
     // test method
 //    public static void main(String[] args)
@@ -27,34 +28,32 @@ public class Dice {
 
 
     public Dice(String nameInput)
-    // sets a constructor for the object Dice.
-    {
+    // sets a constructor for the object Dice.{
         String diceName;
         int faceValue;
     }
 
-    public void roll()
-    // method that generates a random value for faceValue contingent on diceFaces and numberofDices.
-    {
+    public void roll() {
         faceValue = (int) (Math.random() * diceFaces) + 1;
         System.out.print(faceValue +" ");
     }
 
+    public void diceSum(int dice1FaceValue, int dice2FaceValue){
+        diceSum = dice1FaceValue + dice2FaceValue;
+    }
+
 
   used for tests
-    public void setFaceValue(int value) // unnecessary
-    {
+    public void setFaceValue(int value) {
         if (value > 0 && value <= diceFaces)
             faceValue = value;
     }
 
-    public int getFaceValue()
-    {
+    public int getFaceValue(){
         return faceValue;
     }
 
-    public String toString() // May delete later. Keep if print String variable of dice faceValue is necessary.
-    {
+    public String toString(){
         String faceValueToString = Integer.toString();
         return faceValueToString;
     }
