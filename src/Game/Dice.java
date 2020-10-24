@@ -41,22 +41,22 @@ public class Dice {
     }
 
 
-//  used for tests
-//    public void setFaceValue(int value) // unnecessary
-//    {
-//        if (value > 0 && value <= diceFaces)
-//            faceValue = value;
-//    }
-//
-//    public int getFaceValue()
-//    {
-//        return faceValue;
-//    }
-//
-//    public String toString() // May delete later. Keep if print String variable of dice faceValue is necessary.
-//    {
-//        String faceValueToString = Integer.toString();
-//        return faceValueToString;
-//    }
+  used for tests
+    public void setFaceValue(int value) // unnecessary
+    {
+        if (value > 0 && value <= diceFaces)
+            faceValue = value;
+    }
+
+    public int getFaceValue()
+    {
+        return faceValue;
+    }
+
+    public String toString() // May delete later. Keep if print String variable of dice faceValue is necessary.
+    {
+        String faceValueToString = Integer.toString();
+        return faceValueToString;
+    }
 
 }
