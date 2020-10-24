@@ -1,22 +1,9 @@
 public class Dice {
 
     private final static int diceFaces = 6; // edit this variable to customize faces of the dice.
-    private static int faceValue; // sum of dice facevalues.
-    private static int diceRollValue; // equivalent to the number that is produced when rolling a dice.
+    private int faceValue; // sum of dice facevalues.
+    private int diceRollValue; // equivalent to the number that is produced when rolling a dice.
 
-
-    // test method
-    public static void main(String[] args)
-    {
-        Dice dice = new Dice();
-        int i;
-        for(i = 0; i < 1000; i++)
-        {
-            dice.roll();
-            System.out.println(dice.getFaceValue());
-            faceValue = 0;
-        }
-    }
 
 
     public Dice()
@@ -75,13 +62,6 @@ public class Dice {
             return faceValue;
         }
 
-
-
-        public void setFaceValue(int value) // unnecessary
-        {
-            if (value > 0 && value <= diceFaces)
-                faceValue = value;
-        }
 
 //    public int getFaceValue()
 //    {
