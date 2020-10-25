@@ -29,7 +29,8 @@ public class Dice {
 
 
     public Dice(String nameInput)
-    // sets a constructor for the object Dice.{
+    // sets a constructor for the object Dice.
+    {
         String diceName;
         int faceValue;
     }
