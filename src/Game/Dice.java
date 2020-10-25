@@ -1,6 +1,7 @@
 package Game;
-
 public class Dice {
+    public static Dice dice1 = new Dice();
+    public static Dice dice2 = new Dice();
 
     private final static int diceFaces = 6;
     private int faceValue;
@@ -42,8 +43,11 @@ public class Dice {
         diceSum = dice1FaceValue + dice2FaceValue;
     }
 
+    public int getdiceSum() {
+        return diceSum;
+    }
 
-  used for tests
+
     public void setFaceValue(int value) {
         if (value > 0 && value <= diceFaces)
             faceValue = value;
