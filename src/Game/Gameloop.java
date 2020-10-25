@@ -10,7 +10,7 @@ public class Gameloop
         if(Controller.input.toLowerCase().equals("r")){
             Dice.roll();
             Gameboard.newPosition();
-            Rules.gameRules;
+            Rules.gameRules();
             //Player.nextPlayer();
         }
 
