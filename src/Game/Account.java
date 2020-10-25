@@ -13,14 +13,14 @@ public class Account {
     }
 
     public void addPlayerScore(int incomingGameBoardScore){
-        playerScore += incomingGameBoardScore;
+        this.playerScore += incomingGameBoardScore;
     }
 
 
 
     // used for tests
     public void setPlayerScore(int incomingVariable) {
-        this.playerScore = incomingVariable;
+        this.playerScore += incomingVariable;
     }
 
     //gets the accountBalance of the current player.
