@@ -1,10 +1,12 @@
 package Game;
-
 public class Dice {
+    public static Dice dice1 = new Dice();
+    public static Dice dice2 = new Dice();
 
     private final static int diceFaces = 6;
     private int faceValue;
     private String diceName;
+    private int diceSum;
 
     // test method
 //    public static void main(String[] args)
@@ -33,30 +35,32 @@ public class Dice {
         int faceValue;
     }
 
-    public void roll()
-    // method that generates a random value for faceValue contingent on diceFaces and numberofDices.
-    {
+    public void roll() {
         faceValue = (int) (Math.random() * diceFaces) + 1;
         System.out.print(faceValue +" ");
     }
 
+    public void diceSum(int dice1FaceValue, int dice2FaceValue){
+        diceSum = dice1FaceValue + dice2FaceValue;
+    }
 
-//  used for tests
-//    public void setFaceValue(int value) // unnecessary
-//    {
-//        if (value > 0 && value <= diceFaces)
-//            faceValue = value;
-//    }
-//
-//    public int getFaceValue()
-//    {
-//        return faceValue;
-//    }
-//
-//    public String toString() // May delete later. Keep if print String variable of dice faceValue is necessary.
-//    {
-//        String faceValueToString = Integer.toString();
-//        return faceValueToString;
-//    }
+    public int getdiceSum() {
+        return diceSum;
+    }
+
+
+    public void setFaceValue(int value) {
+        if (value > 0 && value <= diceFaces)
+            faceValue = value;
+    }
+
+    public int getFaceValue(){
+        return faceValue;
+    }
+
+    public String toString(){
+        String faceValueToString = Integer.toString();
+        return faceValueToString;
+    }
 
 }

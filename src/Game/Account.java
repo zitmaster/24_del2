@@ -1,6 +1,5 @@
 package Game;
 public class Account {
-    private static int playerScoreTest = 1000;
     private final int playerStartScore = 1000;
     private int playerScore;
 
@@ -16,13 +15,13 @@ public class Account {
 
 
 
-//    // used for tests
-//    public void setPlayerScore(int incomingVariable) {
-//        this.playerScoreTest = playerScoreTest;
-//    }
-//
-//    //gets the accountBalance of the current player.
-//    public int getPlayerScore() {
-//        return playerScoreTest;
-//    }
+    // used for tests
+    public void setPlayerScore(int incomingVariable) {
+        this.playerScore = incomingVariable;
+    }
+
+    //gets the accountBalance of the current player.
+    public int getPlayerScore() {
+        return playerScore;
+    }
 }
