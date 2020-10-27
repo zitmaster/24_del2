@@ -11,7 +11,7 @@ public class Player {
     public Player(String nameReference, int IdInput) {
         String name = nameReference;
         int ID = IdInput;
-        this.account = new Account()
+        this.account = new Account();
         currentPlayerPosition = startPlayerPosition;
     }
     public void setCurrentPlayerPosition(int gameBoardInput){
@@ -22,4 +22,6 @@ public class Player {
     public int getCurrentPlayerPosition() {
         return currentPlayerPosition;
     }
+    public int getScore(){return account.getPlayerScore();}
+    public void setPlayerScore(int i){account.setPlayerScore(i);}
 }

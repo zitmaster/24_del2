@@ -28,23 +28,23 @@ public class Dice {
 //    }
 
 
-    public Dice(String nameInput)
+    public Dice(){
     // sets a constructor for the object Dice.{
-        String diceName;
         int faceValue;
     }
 
     public void roll() {
-        faceValue = (int) (Math.random() * diceFaces) + 1;
-        System.out.print(faceValue +" ");
+        dice1.faceValue = (int) (Math.random() * diceFaces) + 1;
+        dice2.faceValue = (int) (Math.random() * diceFaces) + 1;
     }
 
-    public void diceSum(int dice1FaceValue, int dice2FaceValue){
-        diceSum = dice1FaceValue + dice2FaceValue;
-    }
-
-    public int getdiceSum() {
+    public int diceSum(){
+        diceSum = dice1.faceValue + dice2.faceValue;
         return diceSum;
+    }
+
+    public static int getdiceSum() {
+        return dice1.faceValue + dice2.faceValue;
     }
 
 
@@ -57,9 +57,9 @@ public class Dice {
         return faceValue;
     }
 
-    public String toString(){
-        String faceValueToString = Integer.toString();
-        return faceValueToString;
-    }
+    //public String toString(){
+    //    String faceValueToString = Integer.toString();
+    //    return faceValueToString;
+    //}
 
 }
