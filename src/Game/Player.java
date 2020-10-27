@@ -6,10 +6,12 @@ public class Player {
 
     private final int startPlayerPosition = 0;
     private int currentPlayerPosition;
+    private Account account;
 
     public Player(String nameReference, int IdInput) {
         String name = nameReference;
         int ID = IdInput;
+        this.account = new Account()
         currentPlayerPosition = startPlayerPosition;
     }
     public void setCurrentPlayerPosition(int gameBoardInput){
