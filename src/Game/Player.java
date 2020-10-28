@@ -12,9 +12,9 @@ public class Player {
         int ID = IdInput;
         currentPlayerPosition = startPlayerPosition;
     }
+
     public void setCurrentPlayerPosition(int gameBoardInput){
         this.currentPlayerPosition = gameBoardInput;
-
     }
 
     public int getCurrentPlayerPosition() {
