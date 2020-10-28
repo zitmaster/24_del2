@@ -16,8 +16,6 @@ public class Account {
         this.playerScore += incomingGameBoardScore;
     }
 
-
-
     // used for tests
     public void setPlayerScore(int incomingVariable) {
         this.playerScore += incomingVariable;
