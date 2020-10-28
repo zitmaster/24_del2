@@ -34,8 +34,12 @@ public class Dice {
     }
 
     public void roll() {
-        dice1.faceValue = (int) (Math.random() * diceFaces) + 1;
-        dice2.faceValue = (int) (Math.random() * diceFaces) + 1;
+        this.faceValue = (int) (Math.random() * diceFaces) + 1;
+    }
+
+    public static void rollBoth(){
+        dice1.roll();
+        dice2.roll();
     }
 
     public int diceSum(){

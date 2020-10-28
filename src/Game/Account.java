@@ -16,7 +16,7 @@ public class Account {
 
     // used for tests
     public void setPlayerScore(int incomingVariable) {
-        this.playerScore += incomingVariable;
+        this.playerScore = incomingVariable;
     }
 
     //gets the accountBalance of the current player.
