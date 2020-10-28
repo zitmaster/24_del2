@@ -1,8 +1,8 @@
 package Game;
 
 public class Player {
-    private static int currentPLayer = 0;
-    private static int amountOfPlayeers = 2;
+    private static int currentPlayer = 0;
+    private static int amountOfPlayers = 2;
     private final int startPlayerPosition = 0;
     private int currentPlayerPosition;
 
@@ -18,7 +18,7 @@ public class Player {
     }
 
     public static void nextPlayer(){
-
+        currentPlayer = (currentPlayer + 1) % (amountOfPlayers);
     }
 
     public void setCurrentPlayerPosition(int gameBoardInput){
