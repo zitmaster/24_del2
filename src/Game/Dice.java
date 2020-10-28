@@ -1,7 +1,6 @@
 package Game;
 public class Dice {
-    public static Dice dice1 = new Dice();
-    public static Dice dice2 = new Dice();
+
 
     private final static int diceFaces = 6;
     private int faceValue;
@@ -29,28 +28,13 @@ public class Dice {
 
 
     public Dice(){
-    // sets a constructor for the object Dice.{
-        int faceValue;
+        int faceValue = this.faceValue;
     }
 
     public void roll() {
         this.faceValue = (int) (Math.random() * diceFaces) + 1;
+        System.out.print(faceValue +" ");
     }
-
-    public static void rollBoth(){
-        dice1.roll();
-        dice2.roll();
-    }
-
-    public int diceSum(){
-        diceSum = dice1.faceValue + dice2.faceValue;
-        return diceSum;
-    }
-
-    public static int getdiceSum() {
-        return dice1.faceValue + dice2.faceValue;
-    }
-
 
     public void setFaceValue(int value) {
         if (value > 0 && value <= diceFaces)
@@ -61,9 +45,9 @@ public class Dice {
         return faceValue;
     }
 
-    //public String toString(){
+   // public String toString(){
     //    String faceValueToString = Integer.toString();
-    //    return faceValueToString;
+     //   return faceValueToString;
     //}
 
 }

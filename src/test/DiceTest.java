@@ -1,3 +1,5 @@
+
+/*
 package test;
 import Game.Dice;
 import org.junit.jupiter.api.Test;
@@ -5,8 +7,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class DiceTest {
-        Dice dice1 = new Dice();
-        Dice dice2 = new Dice();
+        //Dice dice1 = new Dice();
+        //Dice dice2 = new Dice();
 
     @Test
     void roll() {
@@ -47,4 +49,4 @@ class DiceTest {
     @Test
     void getFaceValue() {
     }
-}
+}*/

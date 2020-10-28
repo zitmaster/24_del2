@@ -1,15 +1,14 @@
 package Game;
 
 public class Player {
-    public static Player player1 = new Player("Player1", 1);
-    public static Player player2 = new Player("Player2", 2);
 
     private final int startPlayerPosition = 0;
     private int currentPlayerPosition;
+    private String name;
     private Account account;
 
     public Player(String nameReference, int IdInput) {
-        String name = nameReference;
+        this.name = nameReference;
         int ID = IdInput;
         this.account = new Account();
         currentPlayerPosition = startPlayerPosition;
@@ -18,7 +17,7 @@ public class Player {
         this.currentPlayerPosition = gameBoardInput;
 
     }
-
+    public String getName(){return this.name;}
     public int getCurrentPlayerPosition() {
         return currentPlayerPosition;
     }
