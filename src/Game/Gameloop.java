@@ -3,9 +3,13 @@ package Game;
 import com.sun.tools.javac.Main;
 
 public class Gameloop {
-    static boolean game_run = true;
+    static boolean gameRun = true;
+
+    /**
+     * gameloop is the loop of the game runs until gamRun is false.
+     */
     public static void gameloop(){
-        while(game_run)
+        while(gameRun)
         if(Controller.getInput().equals("r")){
             System.out.println(Controller.getCurrentPlayer().getName());
             Controller.roll();

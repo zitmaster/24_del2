@@ -4,7 +4,11 @@ public class Gameboard {
     private static Player currentplayer;
 
 
-
+    /**
+     * Moves the player,
+     * prints out information about where the player lands,
+     * changes player account
+     */
     public static void newPosition() {
         currentplayer = Controller.getCurrentPlayer();
         currentplayer.setCurrentPlayerPosition(((currentplayer.getCurrentPlayerPosition() + Controller.GetDiceSum())%10)+1);

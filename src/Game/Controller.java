@@ -12,21 +12,19 @@ public class Controller {
     static Scanner scan = new Scanner(System.in);
     private static Player currentPlayer= player1;
 
-    //public static void newGame(){
-        /*System.out.println("Welcome, the goal of this game is to reach 3000 points."+
-                "Each player starts with 1000 points."+
-                "Press 'r' to roll the dices");
 
-    }
-    public static void endGame(){
-        System.out.println("Game.Player "+ "x");//Jeg er ikke sikker på hvad der skal stå her og har der med indsat x
-        System.out.println("Type 'n' to start a new game");}*/
-
-
+    /**
+     * gets input from scanner in controller named scan
+     * @return the input of the player
+     */
        public static String getInput(){
         input = scan.nextLine();
         return input;
        }
+
+    /**
+     * Rolls both dices and sets DiceSum to the sum of the dices
+     */
        public static void roll(){
         dice1.roll();
         dice2.roll();
@@ -36,6 +34,9 @@ public class Controller {
         return DiceSum;
     }
 
+    /**
+     * Changes players between player 1 and player 2
+     */
     public static void changePlayer(){
         if((currentPlayer == player1) && (currentPlayer.getCurrentPlayerPosition() != 9)){
             currentPlayer = player2;
